@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
 /* general styling */
 :root {
-  --smaller: .75;
+  --smaller: 0.75;
 }
 
 * {
@@ -9,35 +11,32 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
 
+a {
+  color: #fff;
+}
+
 body {
+  font-family: "Poiret One", cursive;
   align-items: center;
-  background-color: #ffd54f;
+  background-color: #333;
   display: flex;
-  font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen-Sans, 
-    Ubuntu, 
-    Cantarell, 
-    "Helvetica Neue", 
-    sans-serif;
 }
 
 .container {
-  color: #333;
+  color: #fff;
   margin: 0 auto;
   text-align: center;
 }
 
 h1 {
   font-weight: normal;
-  letter-spacing: .125rem;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
 }
 
@@ -61,19 +60,31 @@ li span {
 
 .emoji span {
   font-size: 4rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 @media all and (max-width: 768px) {
   h1 {
     font-size: calc(1.5rem * var(--smaller));
   }
-  
+
   li {
     font-size: calc(1.125rem * var(--smaller));
   }
-  
+
   li span {
     font-size: calc(3.375rem * var(--smaller));
   }
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.footer__copy span {
+  color: #ff0000;
 }
